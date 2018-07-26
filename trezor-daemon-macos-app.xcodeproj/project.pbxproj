@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61C99DAD20F761A000AB5576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C99DAC20F761A000AB5576 /* AppDelegate.swift */; };
+		61C99DAF20F761A000AB5576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C99DAE20F761A000AB5576 /* ViewController.swift */; };
+		61C99DB120F761A100AB5576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C99DB020F761A100AB5576 /* Assets.xcassets */; };
+		61C99DB420F761A100AB5576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C99DB220F761A100AB5576 /* Main.storyboard */; };
+		61C99DC020F76DEE00AB5576 /* manage-trezord.sh in Resources */ = {isa = PBXBuildFile; fileRef = 61C99DBF20F76DEE00AB5576 /* manage-trezord.sh */; };
+		61C99DCA20F78FA100AB5576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C99DC920F78FA100AB5576 /* AppDelegate.swift */; };
+		61C99DCE20F78FA200AB5576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C99DCD20F78FA200AB5576 /* Assets.xcassets */; };
+		61C99DD120F78FA200AB5576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C99DCF20F78FA200AB5576 /* Main.storyboard */; };
+		61C99DDA20F7910800AB5576 /* trezor-daemon-macos-app-helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 61C99DC720F78FA100AB5576 /* trezor-daemon-macos-app-helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61C99DD920F790FE00AB5576 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "Contents/Library/trezor-daemon";
+			dstSubfolderSpec = 1;
+			files = (
+				61C99DDA20F7910800AB5576 /* trezor-daemon-macos-app-helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		61C99DA920F761A000AB5576 /* trezor-daemon-macos-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trezor-daemon-macos-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C99DAC20F761A000AB5576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61C99DAE20F761A000AB5576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61C99DB020F761A100AB5576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61C99DB320F761A100AB5576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61C99DB520F761A100AB5576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C99DB620F761A100AB5576 /* trezor_daemon_macos_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = trezor_daemon_macos_app.entitlements; sourceTree = "<group>"; };
+		61C99DBF20F76DEE00AB5576 /* manage-trezord.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "manage-trezord.sh"; sourceTree = "<group>"; };
+		61C99DC720F78FA100AB5576 /* trezor-daemon-macos-app-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trezor-daemon-macos-app-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C99DC920F78FA100AB5576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61C99DCD20F78FA200AB5576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61C99DD020F78FA200AB5576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61C99DD220F78FA200AB5576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C99DD320F78FA200AB5576 /* trezor_daemon_macos_app_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = trezor_daemon_macos_app_helper.entitlements; sourceTree = "<group>"; };
+		61C99DDF20F7995E00AB5576 /* trezord-go */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "trezord-go"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C99DA620F761A000AB5576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C99DC420F78FA100AB5576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61C99DA020F761A000AB5576 = {
+			isa = PBXGroup;
+			children = (
+				61C99DDF20F7995E00AB5576 /* trezord-go */,
+				61C99DBF20F76DEE00AB5576 /* manage-trezord.sh */,
+				61C99DAB20F761A000AB5576 /* trezor-daemon-macos-app */,
+				61C99DC820F78FA100AB5576 /* trezor-daemon-macos-app-helper */,
+				61C99DAA20F761A000AB5576 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61C99DAA20F761A000AB5576 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C99DA920F761A000AB5576 /* trezor-daemon-macos-app.app */,
+				61C99DC720F78FA100AB5576 /* trezor-daemon-macos-app-helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C99DAB20F761A000AB5576 /* trezor-daemon-macos-app */ = {
+			isa = PBXGroup;
+			children = (
+				61C99DAC20F761A000AB5576 /* AppDelegate.swift */,
+				61C99DAE20F761A000AB5576 /* ViewController.swift */,
+				61C99DB020F761A100AB5576 /* Assets.xcassets */,
+				61C99DB220F761A100AB5576 /* Main.storyboard */,
+				61C99DB520F761A100AB5576 /* Info.plist */,
+				61C99DB620F761A100AB5576 /* trezor_daemon_macos_app.entitlements */,
+			);
+			path = "trezor-daemon-macos-app";
+			sourceTree = "<group>";
+		};
+		61C99DC820F78FA100AB5576 /* trezor-daemon-macos-app-helper */ = {
+			isa = PBXGroup;
+			children = (
+				61C99DC920F78FA100AB5576 /* AppDelegate.swift */,
+				61C99DCD20F78FA200AB5576 /* Assets.xcassets */,
+				61C99DCF20F78FA200AB5576 /* Main.storyboard */,
+				61C99DD220F78FA200AB5576 /* Info.plist */,
+				61C99DD320F78FA200AB5576 /* trezor_daemon_macos_app_helper.entitlements */,
+			);
+			path = "trezor-daemon-macos-app-helper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C99DA820F761A000AB5576 /* trezor-daemon-macos-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C99DB920F761A100AB5576 /* Build configuration list for PBXNativeTarget "trezor-daemon-macos-app" */;
+			buildPhases = (
+				61C99DA520F761A000AB5576 /* Sources */,
+				61C99DA620F761A000AB5576 /* Frameworks */,
+				61C99DA720F761A000AB5576 /* Resources */,
+				61C99DD920F790FE00AB5576 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "trezor-daemon-macos-app";
+			productName = "trezor-daemon-macos-app";
+			productReference = 61C99DA920F761A000AB5576 /* trezor-daemon-macos-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61C99DC620F78FA100AB5576 /* trezor-daemon-macos-app-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C99DD420F78FA200AB5576 /* Build configuration list for PBXNativeTarget "trezor-daemon-macos-app-helper" */;
+			buildPhases = (
+				61C99DC320F78FA100AB5576 /* Sources */,
+				61C99DC420F78FA100AB5576 /* Frameworks */,
+				61C99DC520F78FA100AB5576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "trezor-daemon-macos-app-helper";
+			productName = "trezor-daemon-macos-app-helper";
+			productReference = 61C99DC720F78FA100AB5576 /* trezor-daemon-macos-app-helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C99DA120F761A000AB5576 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Vaclav Mlejnsky";
+				TargetAttributes = {
+					61C99DA820F761A000AB5576 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					61C99DC620F78FA100AB5576 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 61C99DA420F761A000AB5576 /* Build configuration list for PBXProject "trezor-daemon-macos-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61C99DA020F761A000AB5576;
+			productRefGroup = 61C99DAA20F761A000AB5576 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C99DA820F761A000AB5576 /* trezor-daemon-macos-app */,
+				61C99DC620F78FA100AB5576 /* trezor-daemon-macos-app-helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C99DA720F761A000AB5576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C99DC020F76DEE00AB5576 /* manage-trezord.sh in Resources */,
+				61C99DB120F761A100AB5576 /* Assets.xcassets in Resources */,
+				61C99DB420F761A100AB5576 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C99DC520F78FA100AB5576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C99DCE20F78FA200AB5576 /* Assets.xcassets in Resources */,
+				61C99DD120F78FA200AB5576 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C99DA520F761A000AB5576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C99DAF20F761A000AB5576 /* ViewController.swift in Sources */,
+				61C99DAD20F761A000AB5576 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C99DC320F78FA100AB5576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C99DCA20F78FA100AB5576 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61C99DB220F761A100AB5576 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C99DB320F761A100AB5576 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61C99DCF20F78FA200AB5576 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C99DD020F78FA200AB5576 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C99DB720F761A100AB5576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61C99DB820F761A100AB5576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		61C99DBA20F761A100AB5576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "trezor-daemon-macos-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VaclavMlejnsky.trezor-daemon-macos-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		61C99DBB20F761A100AB5576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "trezor-daemon-macos-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VaclavMlejnsky.trezor-daemon-macos-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		61C99DD520F78FA200AB5576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				INFOPLIST_FILE = "trezor-daemon-macos-app-helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VaclavMlejnsky.trezor-daemon-macos-app-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		61C99DD620F78FA200AB5576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				INFOPLIST_FILE = "trezor-daemon-macos-app-helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VaclavMlejnsky.trezor-daemon-macos-app-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C99DA420F761A000AB5576 /* Build configuration list for PBXProject "trezor-daemon-macos-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C99DB720F761A100AB5576 /* Debug */,
+				61C99DB820F761A100AB5576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C99DB920F761A100AB5576 /* Build configuration list for PBXNativeTarget "trezor-daemon-macos-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C99DBA20F761A100AB5576 /* Debug */,
+				61C99DBB20F761A100AB5576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C99DD420F78FA200AB5576 /* Build configuration list for PBXNativeTarget "trezor-daemon-macos-app-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C99DD520F78FA200AB5576 /* Debug */,
+				61C99DD620F78FA200AB5576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61C99DA120F761A000AB5576 /* Project object */;
+}
